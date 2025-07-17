@@ -1,0 +1,129 @@
+/* General styling for body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: rgb(127, 255, 0);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    color: #000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  /* Navigation bar styling */
+  nav {
+    background-color: #444;
+    width: 100%;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  nav ul li a:hover {
+    color: rgb(127, 255, 0);
+  }
+  
+  /* Main content and login form styling */
+  main {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    width: 500px;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    color: rgb(127, 255, 0);
+    font-size: 1.8rem;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container label {
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  .login-container input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-container button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(127, 255, 0);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .login-container button:hover {
+    background-color: #9ACD32;
+  }
+  .signup{
+    display:flex;
+    justify-content: space-between;
+  }
+  .full{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    margin-top:30px;
+  }
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* #confirm_password{
+    border-color: red;
+  } */
+
+  #confirm_password:focus {
+    outline: none; /* Remove default outline */
+}

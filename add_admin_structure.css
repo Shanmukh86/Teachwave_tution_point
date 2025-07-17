@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif, "Merriweather", serif; /* New fonts */
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c3e50; /* Dark slate background */
+    color: #ecf0f1; /* Default light gray text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #9b59b6,#e74c3c); /* Abstract purple to pink gradient */
+    text-align: center;
+    padding: 30px 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+header .header-container {
+    display: inline-block;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* Main Content Section */
+main {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    flex: 1;
+    min-height: 100vh; /* Ensure it takes up full height */
+    padding: 0 20px; /* Add some padding for better spacing */
+}
+
+.full {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    background-color: rgba(44, 62, 80, 0.85); /* Dark semi-transparent background */
+    border-radius: 15px; /* Apply border-radius for rounded corners */
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align all child elements */
+}
+
+/* Form Section */
+.login-container {
+    width: 100%;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:#e74c3c; /* Soft pink accent */
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #34495e;
+    background: #ecf0f1;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    box-shadow: 0px 0px 12px,#e74c3c;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #e74c3c; /* Purple button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e74c3c; /* Soft pink hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .full {
+        padding: 20px;
+    }
+
+    .login-container h2 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"], input[type="password"] {
+        font-size: 1rem;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}

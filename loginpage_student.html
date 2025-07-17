@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuition Fee Waiver</title>
+    <link rel="stylesheet" href="login_student_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>TEACHWAVE</h1>
+            <h2>Empowering Education for a Better Future</h2>
+        </div>
+    </header>
+    <!-- Updated Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="loginpage_admin.html">Admin Login</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="background">
+            <div class="login-container">
+                <h2>Student Login</h2>
+                <p>Please enter your login credentials</p>
+                <form action="http://localhost/DBMSPROJWCT2/registered_student.php" method="POST">
+                    <div class="input-group">
+                        <label for="username_reg">Username</label>
+                        <input type="text" id="username" name="username_reg" placeholder="Enter your username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password_reg">Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" name="password_reg" placeholder="Enter your password" required>
+                            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-login">Login</button>
+                    <p class="signup-link">New here? <a href="signup_student.html">Sign up now</a>.</p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

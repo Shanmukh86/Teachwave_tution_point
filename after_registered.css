@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; /* Replaced fonts with Open Sans */
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c3e50; /* Dark slate background */
+    color: #ecf0f1; /* Default light gray text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #2980b9, #16a085); /* Gradient from blue to teal */
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+header .header-container {
+    display: inline-block;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700; /* Bold header */
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 400; /* Normal weight for subtitle */
+    color: #ffffff; /* Light color to contrast with background */
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* Main Content Section */
+.dashboard-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: rgba(44, 62, 80, 0.85); /* Dark semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    backdrop-filter: blur(10px);
+}
+
+/* Content Section */
+.content-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1abc9c; /* Teal accent color */
+}
+
+.content-section p {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    margin-top: 10px;
+}
+
+/* Cards Container */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 100%;
+    max-width: 280px;
+    background: #34495e; /* Dark card background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ecf0f1;
+    margin-bottom: 15px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #1abc9c; /* Teal links */
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid #1abc9c; /* Teal border */
+    border-radius: 6px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.card a:hover {
+    background-color: #1abc9c; /* Teal background on hover */
+    color: #ffffff;
+    transform: translateY(-4px); /* Slight lift effect */
+}
+
+.card:hover {
+    transform: translateY(-4px); /* Lift effect */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Large Card for Admin Summary */
+.large-card {
+    background: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    margin-top: 40px;
+    text-align: center;
+}
+
+.large-card h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.large-card p {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #34495e; /* Footer background */
+    color: #ecf0f1; /* Text color */
+    box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.1); /* Soft footer shadow */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Hover Effects */
+footer:hover {
+    background-color: #2980b9; /* Blue color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .content-section h2 {
+        font-size: 2rem;
+    }
+
+    .content-section p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}

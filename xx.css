@@ -1,0 +1,106 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color:  rgb(127, 255, 0);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.header-container h2 {
+    font-size: 24px;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.student-dashboard {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+}
+
+.greeting {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Course Table Styles */
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.course-table td {
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.course-table td a {
+    color: #3E8E41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.course-table td a:hover {
+    text-decoration: underline;
+}
+
+/* No Records Message */
+.no-records {
+    color: #e74c3c;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* No Session Message */
+.no-session {
+    color: #e74c3c;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

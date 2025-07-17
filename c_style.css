@@ -1,0 +1,237 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; /* Using Open Sans font */
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c3e50; /* Dark background for the body */
+    color: #ecf0f1; /* Default light gray text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    background: linear-gradient(135deg, #2980b9, #16a085); /* Gradient from blue to teal */
+    text-align: center;
+    padding: 50px 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #34495e; /* Dark background for navigation */
+    padding: 20px 0;
+}
+
+nav h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #1abc9c; /* Teal color on hover */
+}
+
+/* Content Section */
+.content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: rgba(44, 62, 80, 0.85);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    backdrop-filter: blur(10px);
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1abc9c;
+}
+
+.section h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #ecf0f1;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    margin-top: 10px;
+}
+
+.section ul {
+    list-style: disc inside;
+    margin-left: 20px;
+}
+
+.section ul li {
+    font-size: 1.1rem;
+    color: #ecf0f1;
+}
+
+/* Sample Code Section */
+pre {
+    background-color: #34495e;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #ecf0f1;
+    overflow-x: auto;
+}
+
+/* Links Section */
+#links a {
+    display: block;
+    color: #1abc9c;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+#links a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #34495e;
+    color: #ecf0f1;
+    box-shadow: 0px -6px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* Hover Effects */
+footer:hover {
+    background-color: #2980b9; /* Blue color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav h2 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .section h2 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .section ul li {
+        font-size: 1rem;
+    }
+
+    pre {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav h2 {
+        font-size: 1.5rem;
+    }
+
+    .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .section ul li {
+        font-size: 1rem;
+    }
+
+    pre {
+        font-size: 1rem;
+    }
+}
